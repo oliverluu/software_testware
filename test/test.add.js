@@ -1,8 +1,10 @@
 // JavaScript source code
+// const assert =import('assert')
+// var chai = import('chai')
+import add from "../src/add.js"
+import chai from "chai"
+const expect = chai.expect
 
-const assert = require('assert');
-const { expect } = require('chai');
-const { add } = require('../src/add');
 
 describe('the add function', () => {
     it('should add 2 numbers together', () => {
@@ -10,4 +12,3 @@ describe('the add function', () => {
         expect(result).to.be.eq(4);
     });
 })
-
