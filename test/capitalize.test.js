@@ -15,5 +15,6 @@ describe('the capitalize function', () => {
     it('should capitalize string containing two parts with only lower case characters.', () => {
         const result = capitalize('niilo nieriä');
         expect(result) == 'Niilo Nieriä';
+        
     });
 })
