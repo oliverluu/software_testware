@@ -31,6 +31,11 @@ describe('the isEmpty function', () => {
 
     it('should check if array of three numbers is empty', () => {
         const result = isEmpty([1, 2, 3]);
+        expect(result).to.be.eq(false);
+    });
+
+    it('should check if array of NaN is empty', () => {
+        const result = isEmpty(NaN);
         expect(result).to.be.eq(true);
     });
 
