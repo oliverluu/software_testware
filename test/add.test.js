@@ -7,4 +7,8 @@ describe('the add function', () => {
         const result = add(2, 2);
         expect(result).to.be.eq(4);
     });
+    it('should add 2 negative numbers together', () => {
+        const result = add(-2, -2);
+        expect(result).to.be.eq(-4);
+    });
 });
