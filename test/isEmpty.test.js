@@ -1,4 +1,4 @@
-import add from "../src/isEmpty.js"
+
 import chai from "chai"
 import isEmpty from "../src/isEmpty.js";
 const expect = chai.expect
@@ -19,13 +19,8 @@ describe('the isEmpty function', () => {
         expect(result).to.be.eq(false);
     });
 
-    it('should check if array containing a string is empty', () => {
+    it('should check if  a string is empty', () => {
         const result = isEmpty('abc');
-        expect(result).to.be.eq(false);
-    });
-
-    it('should check if array of three numbers is empty', () => {
-        const result = isEmpty([1, 2, 3]);
         expect(result).to.be.eq(false);
     });
 

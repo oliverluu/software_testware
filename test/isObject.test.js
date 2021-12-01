@@ -24,10 +24,8 @@ describe('the isObject function', () => {
         expect(result).to.be.eq(true);
     });
 
-    it('should check if a string is considered an object', () => {
+    it('should check if a "true" is considered an object', () => {
         const result = isObject(true);
         expect(result).to.be.eq(false);
     });
-
-
 });
