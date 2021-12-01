@@ -1,4 +1,4 @@
-import capitalize from "../src/add.js"
+import capitalize from "../src/capitalize.js"
 import chai from "chai"
 const expect = chai.expect
 
@@ -15,6 +15,6 @@ describe('the capitalize function', () => {
     it('should capitalize string containing two parts with only lower case characters.', () => {
         const result = capitalize('niilo nieriä');
         expect(result) == 'Niilo Nieriä';
-        
+
     });
 })
