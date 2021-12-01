@@ -28,5 +28,4 @@ describe('the isEmpty function', () => {
         const result = isEmpty(NaN);
         expect(result).to.be.eq(true);
     });
-
 });
